@@ -4,8 +4,8 @@ End-to-end Machine Learning training and inference pipeline, containerized with 
 
 🚀 Quick Start
 
-# 1. Clone the repository
-git clone <repo-url>
+**# 1. Clone the repository
+**git clone <repo-url>
 cd ML_Pipeline
 
 # 2. Copy your CSV into the data/ folder
