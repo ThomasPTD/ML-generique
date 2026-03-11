@@ -21,10 +21,14 @@ docker-compose up --build**
 
 📂 Project Structure
 
+```
+
 ML_Pipeline/
+
 ├── data/               ← Your CSV files (git-ignored)
 
 ├── notebooks/
+
 │   └── 01_train_models.ipynb   ← Training notebook
 
 ├── models/             ← Saved models (git-ignored)
@@ -34,9 +38,12 @@ ML_Pipeline/
 │   └── main.py         ← Streamlit application
 
 ├── Dockerfile
+
 ├── docker-compose.yml
+
 └── requirements.txt
 
+```
 ⚙️ Features
 📓 Jupyter Notebook (localhost:8888)
 -Dynamic loading: Load CSV files via input widgets.
