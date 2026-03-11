@@ -5,18 +5,18 @@ End-to-end Machine Learning training and inference pipeline, containerized with 
 🚀 Quick Start
 
 **# 1. Clone the repository
-**git clone <repo-url>
+git clone <repo-url>
 cd ML_Pipeline
 
-# 2. Copy your CSV into the data/ folder
+**# 2. Copy your CSV into the data/ folder
 cp your_file.csv data/
 
-# 3. Launch Docker
-docker-compose up --build
+**# 3. Launch Docker**
+docker-compose up --build**
 
-# 4. Access interfaces
-#   → Jupyter: http://localhost:8888
-#   → Streamlit: http://localhost:8501
+**# 4. Access interfaces
+**#   → Jupyter: http://localhost:8888
+**#   → Streamlit: http://localhost:8501****
 
 
 📂 Project Structure
