@@ -36,25 +36,29 @@ ML_Pipeline/
 └── requirements.txt
 
 ```
-⚙️ Features
-📓 Jupyter Notebook (localhost:8888)
--Dynamic loading: Load CSV files via input widgets.
--Interactive selection: Choose features/target columns using checkboxes.
--Auto-detection: Automatically identifies Classification or Regression tasks.
--5 Algorithms trained and compared:
-   -Random Forest
-   -Gradient Boosting
-   -XGBoost
-   -SVM
-   -MLP (Neural Network)
--5-fold Cross-validation for every model.Metrics: Accuracy, Recall, F1, Confusion Matrix (Classif) / $R^2$, RMSE, MAE (Regression).
--Seaborn Visualizations: Barplots, CV boxplots, confusion matrices, and learning curves.
--Auto-save: The best-performing model is automatically exported.
+## ⚙️ Features
 
-🌐 Streamlit (localhost:8501)
--Single Prediction: Form dynamically generated based on model features.
--Batch Prediction: Upload a CSV file → Download processed results.
--Sidebar: Model summary and full benchmark report.
+### 📓 Jupyter Notebook (`localhost:8888`)
+
+1. **Dynamic loading**: Load CSV files via input widgets.
+2. **Interactive selection**: Choose features/target columns using checkboxes.
+3. **Auto-detection**: Automatically identifies Classification or Regression tasks.
+4. **5 Algorithms trained and compared**:
+   - Random Forest
+   - Gradient Boosting
+   - XGBoost
+   - SVM
+   - MLP (Neural Network)
+5. **5-fold Cross-validation** for every model.
+6. **Metrics**: Accuracy, Recall, F1, Confusion Matrix (Classif) / $R^2$, RMSE, MAE (Regression).
+7. **Seaborn Visualizations**: Barplots, CV boxplots, confusion matrices, and learning curves.
+8. **Auto-save**: The best-performing model is automatically exported.
+
+### 🌐 Streamlit (`localhost:8501`)
+
+- **Single Prediction**: Form dynamically generated based on model features.
+- **Batch Prediction**: Upload a CSV file → Download processed results.
+- **Sidebar**: Model summary and full benchmark report.
 
 🛠️ Tech Stack
 
