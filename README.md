@@ -23,11 +23,16 @@ docker-compose up --build**
 
 ML_Pipeline/
 ├── data/               ← Your CSV files (git-ignored)
+
 ├── notebooks/
 │   └── 01_train_models.ipynb   ← Training notebook
+
 ├── models/             ← Saved models (git-ignored)
+
 ├── app/
+
 │   └── main.py         ← Streamlit application
+
 ├── Dockerfile
 ├── docker-compose.yml
 └── requirements.txt
