@@ -6,6 +6,7 @@ data/*.xlsx
 models/*.joblib
 models/*.pkl
 models/*.json
+models/*.png
 
 # Python
 __pycache__/

@@ -57,21 +57,7 @@ st.markdown('<div class="main-header"><h1>🤖 ML Pipeline — Interface de Pré
 MODEL_PATH = "models/best_model.joblib"
 METADATA_PATH = "models/model_metadata.json"
 
-
-@st.cache_resource
-def load_model():
-    """Load the trained model and metadata."""
-    if not os.path.exists(MODEL_PATH) or not os.path.exists(METADATA_PATH):
-        return None, None
-    model = joblib.load(MODEL_PATH)
-    with open(METADATA_PATH, 'r', encoding='utf-8') as f:
-        metadata = json.load(f)
-    return model, metadata
-
-
-model, metadata = load_model()
-
-if model is None or metadata is None:
+if not os.path.exists(MODEL_PATH) or not os.path.exists(METADATA_PATH):
     st.markdown("""
     <div class="error-box">
         <h2>⚠️ Aucun modèle trouvé</h2>
@@ -79,6 +65,18 @@ if model is None or metadata is None:
     </div>
     """, unsafe_allow_html=True)
     st.stop()
+
+@st.cache_resource
+def load_model(mtime):
+    """Load the trained model and metadata."""
+    model = joblib.load(MODEL_PATH)
+    with open(METADATA_PATH, 'r', encoding='utf-8') as f:
+        metadata = json.load(f)
+    return model, metadata
+
+# On utilise la date de modification pour invalider le cache de Streamlit si le modèle change
+file_mtime = os.path.getmtime(MODEL_PATH)
+model, metadata = load_model(file_mtime)
 
 # === MODEL INFO ===
 st.sidebar.header("📋 Informations du Modèle")
