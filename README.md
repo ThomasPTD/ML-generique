@@ -41,11 +41,10 @@ ML_Pipeline/
 1. **Chargement dynamique** du CSV via un widget de saisie
 2. **Sélection interactive** des colonnes à utiliser (checkboxes)
 3. **Détection automatique** : Classification ou Régression
-4. **6 Algorithmes** entraînés et comparés :
+4. **5 Algorithmes** entraînés et comparés :
    - Random Forest
    - Gradient Boosting
    - XGBoost
-   - LightGBM
    - SVM
    - MLP (Réseau de Neurones)
 5. **Cross-validation 5-fold** pour chaque modèle
@@ -65,5 +64,5 @@ ML_Pipeline/
 | Conteneurisation | Docker + Docker Compose |
 | Notebook | Jupyter + ipywidgets |
 | Interface | Streamlit |
-| ML | scikit-learn, XGBoost, LightGBM |
+| ML | scikit-learn, XGBoost |
 | Visualisation | Seaborn, Matplotlib |
