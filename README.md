@@ -26,21 +26,13 @@ docker-compose up --build**
 ML_Pipeline/
 
 ├── data/               ← Your CSV files (git-ignored)
-
 ├── notebooks/
-
 │   └── 01_train_models.ipynb   ← Training notebook
-
 ├── models/             ← Saved models (git-ignored)
-
 ├── app/
-
 │   └── main.py         ← Streamlit application
-
 ├── Dockerfile
-
 ├── docker-compose.yml
-
 └── requirements.txt
 
 ```
@@ -50,11 +42,11 @@ ML_Pipeline/
 -Interactive selection: Choose features/target columns using checkboxes.
 -Auto-detection: Automatically identifies Classification or Regression tasks.
 -5 Algorithms trained and compared:
-   Random Forest
-   Gradient Boosting
-   XGBoost
-   SVM
-   MLP (Neural Network)
+   -Random Forest
+   -Gradient Boosting
+   -XGBoost
+   -SVM
+   -MLP (Neural Network)
 -5-fold Cross-validation for every model.Metrics: Accuracy, Recall, F1, Confusion Matrix (Classif) / $R^2$, RMSE, MAE (Regression).
 -Seaborn Visualizations: Barplots, CV boxplots, confusion matrices, and learning curves.
 -Auto-save: The best-performing model is automatically exported.
