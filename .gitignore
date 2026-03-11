@@ -1,0 +1,32 @@
+# Data files
+data/*.csv
+data/*.xlsx
+
+# Saved models
+models/*.joblib
+models/*.pkl
+models/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
